@@ -130,6 +130,9 @@ svg {
 .container {
   padding: 16px 20px;
 }
+.container-lg {
+  padding: 16px 50px;
+}
 .container2 {
   padding: 0 7px;
   display: flex;

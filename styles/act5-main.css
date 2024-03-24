@@ -84,3 +84,33 @@
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
+
+/* main */
+
+/* header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* navigator */
+.main-header-navigator {
+  display: flex;
+  gap: 1rem;
+}
+.main-header-navigator button svg {
+  display: flex;
+  align-items: center;
+}
+/* buttons */
+.main-header-btns {
+  display: flex;
+  gap: 1rem;
+}
+
+/* navigator */
+.navigator-btns {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}

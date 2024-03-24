@@ -49,14 +49,45 @@ button {
   outline: inherit;
 }
 
-.primary {
-  display: inline-block;
+.icon-btn {
+  padding: 0.8rem;
+  border-radius: 100%;
+}
+.button {
+  display: flex;
+  align-items: center;
   padding: 0.7rem 1.7rem;
-  background-color: var(--white-primary);
   font-size: 1.4rem;
   font-weight: 600;
-  color: black;
   border-radius: var(--border-radius-lg);
+  gap: 0.7rem;
+}
+.button-sm {
+  padding: 0.7rem 1.2rem;
+  font-weight: 400;
+}
+
+.primary,
+.active {
+  background-color: var(--white-primary);
+  color: black;
+}
+
+.secondary {
+  background-color: black;
+  color: var(--white-primary);
+}
+.secondary svg,
+.light-secondary svg {
+  fill: var(--white-primary);
+}
+.light-secondary {
+  background-color: var(--black-primary);
+  color: var(--white-primary);
+}
+.inactive {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-primary);
 }
 
 svg {
@@ -66,8 +97,19 @@ svg {
 #appLayout {
   padding: 7px;
   display: grid;
-  grid-template-columns: minmax(200px, 420px) 1fr;
+  grid-template-columns: 0.31fr 1fr;
   height: 100vh;
+  gap: 7px;
+}
+
+#main {
+  background: rgb(18, 18, 18);
+  background: linear-gradient(
+    0deg,
+    rgba(18, 18, 18, 1) 61%,
+    rgba(34, 34, 34, 1) 100%
+  );
+  border-radius: var(--border-radius-sm);
 }
 
 .container {

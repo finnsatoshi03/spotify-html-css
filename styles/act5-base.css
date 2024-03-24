@@ -64,6 +64,10 @@ button {
   border-radius: var(--border-radius-lg);
   gap: 0.7rem;
 }
+.button:hover,
+.icon-btn:hover {
+  scale: 1.05;
+}
 .button-sm {
   padding: 0.7rem 1.2rem;
   font-weight: 400;

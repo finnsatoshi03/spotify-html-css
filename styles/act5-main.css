@@ -137,6 +137,8 @@
 }
 /* radio cards */
 .radio-cards-container {
+  display: flex;
+  overflow: hidden;
 }
 .radio-card {
   display: inline-flex;
@@ -169,8 +171,8 @@
 }
 .card-player-btn {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -5.5rem;
+  right: 1rem;
   background-color: var(--green-primary);
   height: 4.5rem;
   width: 4.5rem;
@@ -178,9 +180,13 @@
   align-items: center;
   justify-content: center;
   opacity: 0;
+  box-shadow: -2px 15px 22px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 15px 22px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 15px 22px -6px rgba(0, 0, 0, 0.75);
 }
 .radio-card:hover .card-player-btn {
   opacity: 1;
+  top: -6.5rem;
 }
 .card-player-btn svg {
   fill: black;

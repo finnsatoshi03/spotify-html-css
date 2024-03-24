@@ -5,11 +5,13 @@
   --black-hover: #191919;
   --white-primary: #f6f6f6;
   --gray-primary: rgba(167, 167, 155, 0.9);
+  --gray-hover: #1a1a1a;
+  --green-primary: #1fdf64;
 
   --font-primary: "Wix Modefor Text", sans-serif;
 
   --border-radius-sm: 10px;
-  --border-radius-md: 20px;
+  --border-radius-md: 15px;
   --border-radius-lg: 20px;
 }
 
@@ -89,6 +91,9 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--white-primary);
 }
+.inactive:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
 svg {
   fill: var(--gray-primary);
@@ -97,7 +102,7 @@ svg {
 #appLayout {
   padding: 7px;
   display: grid;
-  grid-template-columns: 0.31fr 1fr;
+  grid-template-columns: 0.4fr 1fr;
   height: 100vh;
   gap: 7px;
 }

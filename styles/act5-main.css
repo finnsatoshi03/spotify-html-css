@@ -114,3 +114,74 @@
   gap: 1rem;
   margin: 2rem 0;
 }
+
+/* radio */
+.radio-container {
+}
+/* header */
+.radio-header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  /* border: 1px solid red; */
+}
+.radio-header-container h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.radio-header-container button {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--gray-primary);
+  align-self: end;
+}
+/* radio cards */
+.radio-cards-container {
+}
+.radio-card {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0.7rem;
+  gap: 0.8rem;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  width: 20%;
+}
+.radio-card:hover {
+  background-color: var(--gray-hover);
+}
+.radio-card img {
+  max-width: 100%;
+  border-radius: var(--border-radius-sm);
+}
+.radio-card h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.radio-card p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--gray-primary);
+  margin-bottom: 0.8rem;
+}
+.card-player-btn-container {
+  position: relative;
+}
+.card-player-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--green-primary);
+  height: 4.5rem;
+  width: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.radio-card:hover .card-player-btn {
+  opacity: 1;
+}
+.card-player-btn svg {
+  fill: black;
+}

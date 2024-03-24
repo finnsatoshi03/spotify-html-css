@@ -1,0 +1,62 @@
+@import "act5-base.css";
+
+/* Sidebar */
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+/* Sidebar Nav */
+.sidebar-container {
+  background-color: var(--black-secondary);
+  border-radius: var(--border-radius-sm);
+  letter-spacing: 0.3px;
+}
+.sidebar-nav {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.sidebar-nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.sidebar-nav li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  color: var(--gray-primary);
+}
+.sidebar-nav li:hover svg {
+  fill: var(--white-primary);
+}
+.sidebar-nav li:hover {
+  cursor: pointer;
+  color: var(--white-primary);
+}
+
+/* Sidebar Library */
+.sidebar-lib {
+  color: var(--gray-primary);
+}
+.sidebar-lib-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar-lib-title {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.sidebar-lib-btns {
+  display: flex;
+  gap: 1rem;
+}
+.sidebar-lib-btns button {
+  padding: 0.8rem;
+  border-radius: 100%;
+}
+.sidebar-lib-btns button:hover {
+  background-color: var(--black-hover);
+}

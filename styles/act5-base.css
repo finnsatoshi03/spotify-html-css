@@ -52,6 +52,11 @@ button {
 }
 
 .icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
   padding: 0.8rem;
   border-radius: 100%;
 }
